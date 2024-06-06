@@ -24,7 +24,7 @@ This spellchecker program uses a multi-threaded approach to process multiple tex
 - POSIX-compliant operating system (Linux, macOS).
 
 ## Files and Functions
-- **spellchecker.c**: Main source file containing the spellchecker program.
+- **parallelSpellChecker.c**: Main source file containing the spellchecker program.
 - **replaceApostrophe.py**: Python script used to preprocess input files.
 
 ### Main Functions
@@ -82,7 +82,7 @@ To enable logging to a file:
 The HashSet is used to store the dictionary words for fast lookup. It uses a simple hash function and linked lists to handle collisions.
 
 ### Python Integration
-The `replaceApostrophe.py` script is called to preprocess input files, replacing apostrophes and other preprocessing tasks. The script's output is read and used in the main program.
+The `replaceApostrophe.py` script is called to preprocess input files, replacing apostrophes and performing other preprocessing tasks. The script's output is read and used in the main program.
 
 ### Logging
 If logging is enabled (`-l` flag), the results of each task are appended to `username_O.out`.
