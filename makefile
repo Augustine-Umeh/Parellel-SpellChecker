@@ -7,4 +7,5 @@ checker: parallelSpellChecker.c
 	$(CC) -o checker parallelSpellChecker.c $(CFLAGS)
 
 clean:
-	rm -f checker *.out
+	rm -f checker *.out processed_*.txt 
+	rm -rf checker.dSYM
